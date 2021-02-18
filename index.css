@@ -1,0 +1,72 @@
+body {
+    background-image: url(world.png);
+    background-size: cover;
+    font-family: 'Lexend Mega', sans-serif;
+
+
+}
+
+.countries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card {
+    width: 300px;
+    position: relative;
+    height: 300px;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+    margin: 30px;
+
+}
+
+.content,
+.back,
+.grunt {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: cornflowerblue;
+    border-radius: 20px;
+    border: 4px outset white;
+    position: absolute;
+
+}
+
+.content {
+    background: linear-gradient(rebeccapurple, royalblue);
+    z-index: 3;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: linear-gradient(peachpuff, chocolate);
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.back p {
+    color: royalblue;
+}
+.content p {
+    color: burlywood;
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    color: cadetblue;
+}
+
+
